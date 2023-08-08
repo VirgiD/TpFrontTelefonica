@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet"> 
+    <link rel="icon" href="img/logoMovistar.png">  
+    <title>index</title>
+
+</head>
+<body class="BGindex">
+  <!--Header-->
+  <nav class="navbar navbar-expand-lg bg-secondary bg-dark navbar-dark fixed-top">
+    <div class="container-fluid encabezado">
+      <a class="navbar-brand text-white" href="#">
+        <img src="img/movistar.png" width="60" class=" d-inline-block align-text-center">
+       Fundación Telefónica Movistar
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="./assets/blog.html">Blog</a>
+            <a class="nav-link" href="./assets/cv.html">CV</a>           
+          </div>
+        </div>
+      </div>
+  </nav>
+  <!--main-->
+  <div class="container-fluid" id="contenido">
+    <div class="row">      
+      <div class="col-md-6" > 
+        <div class="card" style="width: 25rem; border: none;background-color: rgb(77, 109, 116);;">           
+        <p class="p1">Programar es aprender a pensar</p>
+        <p class="text-center">Esteve Jobs</p>
+      </div>
+    </div> 
+     
+      <div class="col-md-6">
+        <div class="card" style=" width: 14 rem;margin-bottom: 3% ;border:none">
+        <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2016/06/173866-que-lenguajes-programacion-utilizan-hackers.jpg?tf=3840x" class="img-fluid" alt="imagen programador" id="foto1">
+      </div>
+    </div> 
+  <div class="container">
+    <div class="row">
+
+      <div class="col" style="background-color: rgb(108, 110, 110);text-align: center;">
+        <h1>Aprendé con nosotros</h1>
+
+      </div>
+    </div>
+  </div>
+      <div class="container" style="width:fit-content;margin-top: 10px;">
+        <form action="" id="formulario">  
+          <div class="row">
+            <div class="col ">
+              <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre" aria-label="Nombre">
+            </div>
+            <div class="col pb-3">
+              <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Apellido"
+                aria-label="Apellido">
+            </div>
+            <div class="col-12 pb-3">
+              <input type="email" class="form-control" name="email" id="email" placeholder="correo electrónico">
+            </div>
+          </div>
+          <div class="input-group pb-3 pe-0">
+            <span class="input-text"></span>
+            <textarea class="form-control" aria-label="With textarea" placeholder="Ingresa aquí el lenguaje de programación en el que te gustaría capacitarte"></textarea>
+          </div>           
+         
+          <div class="row">
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <button class="btn btn-dark" type="button" value="borrar" id="borrar" onclick="borrarFormulario(event,this.form)">Borrar</button>
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <button class="btn btn-dark" type="button" value="resumen" id="resumen"
+                onclick="return validar(event,this.form)">Enviar</button>
+            </div>
+          </div>
+        </form>
+      </div>    
+  <!--footer-->
+      <div class="footer mt-md-5 fixed"> 
+        <div class="container-fluid">        
+          <p class="text-center p-3" id="pie">&copy Derechos reservados</p> 
+        </div> 
+      </div>   
+      </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
